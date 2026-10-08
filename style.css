@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.variant-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.variant-table td {
+    border: 2px solid #333;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.row-author {
+    background-color: #048f8f;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.row-info {
+    background-color: #f5f504;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.variant-table:hover .row-author {
+    background-color: #f5f504;
+    color: #000000;
+}
+
+.variant-table:hover .row-info {
+    background-color: #048f8f;
+    color: #ffffff;
+}
+
+.graphics-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.figure-container {
+    text-align: center;
+}
+
+.target-position {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.target-position .outer-ring {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 160px;
+    height: 160px;
+    border: 28px solid #000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.target-position .inner-circle {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.target-position .line-v {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 14px;
+    height: 200px;
+    background-color: #000;
+    z-index: 3;
+}
+
+.target-position .line-h {
+    position: absolute;
+    top: 93px;
+    left: 0;
+    width: 200px;
+    height: 14px;
+    background-color: #000;
+    z-index: 3;
+}
+
+.target-transform {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.target-transform .base-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 22px #fff, 0 0 0 50px #000;
+    z-index: 2;
+}
+
+.target-transform .cross-v {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 100%;
+    background-color: #000;
+    transform: translate(-50%, -50%) scaleY(1);
+    z-index: 3;
+}
+
+.target-transform .cross-h {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 100%;
+    background-color: #000;
+    transform: translate(-50%, -50%) rotate(90deg);
+    z-index: 3;
+}
